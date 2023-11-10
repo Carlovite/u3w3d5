@@ -1,4 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../assets/logo/logo.png";
+import { useState, useEffect } from "react";
 
 const Sidebar = () => {
   return (
@@ -8,14 +10,9 @@ const Sidebar = () => {
         id="sidebar"
       >
         <div className="container flex-column align-items-start">
-          {/* <a className="navbar-brand" href="">
-          <img
-            src="assets/logo/logo.png"
-            alt="Spotify Logo"
-            width="131"
-            height="40"
-          />
-        </a> */}
+          <a className="navbar-brand" href="">
+            <img src={logo} alt="Spotify Logo" width="131" height="40" />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -31,23 +28,23 @@ const Sidebar = () => {
             <div className="navbar-nav">
               <ul>
                 <li>
-                  {/* <a
-                  className="nav-item nav-link d-flex align-items-center"
-                //   href=""
-                >
-                  <i className="bi bi-house-door-fill"></i>&nbsp; Home
-                </a> */}
+                  <a
+                    className="nav-item nav-link d-flex align-items-center"
+                    href="#"
+                  >
+                    <i className="bi bi-house-door-fill"></i>&nbsp; Home
+                  </a>
                 </li>
                 <li>
-                  {/* <a
-                  className="nav-item nav-link d-flex align-items-center"
-                //   href=""
-                >
-                  <i className="bi bi-book-fill"></i>&nbsp; Your Library
-                </a> */}
+                  <a
+                    className="nav-item nav-link d-flex align-items-center"
+                    href="#"
+                  >
+                    <i className="bi bi-book-fill"></i>&nbsp; Your Library
+                  </a>
                 </li>
                 <li>
-                  <form className="input-group mt-3" onsubmit="search(event)">
+                  <form className="input-group mt-3">
                     <input
                       type="text"
                       className="form-control"
@@ -77,7 +74,7 @@ const Sidebar = () => {
           <button className="btn login-btn" type="button">
             Login
           </button>
-          {/* <a href="">Cookie Policy</a> |<a href=""> Privacy</a> */}
+          <a href="#">Cookie Policy</a> |<a href="#"> Privacy</a>
         </div>
       </nav>
     </div>

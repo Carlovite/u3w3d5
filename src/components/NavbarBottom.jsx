@@ -1,3 +1,9 @@
+import next from "../assets/playerbuttons/next.png";
+import shuffle from "../assets/playerbuttons/shuffle.png";
+import prev from "../assets/playerbuttons/prev.png";
+import play from "../assets/playerbuttons/play.png";
+import repeat from "../assets/playerbuttons/repeat.png";
+
 const NavbarBottom = () => {
   return (
     <>
@@ -7,21 +13,21 @@ const NavbarBottom = () => {
             <div className="row h-100 flex-column justify-content-center align-items-center">
               <div className="col-6 col-md-4 playerControls">
                 <div className="d-flex">
-                  {/* <a href="#">
-                  <img src="assets/playerbuttons/shuffle.png" alt="shuffle" />
-                </a>
-                <a href="#">
-                  <img src="assets/playerbuttons/prev.png" alt="prev" />
-                </a>
-                <a href="#">
-                  <img src="assets/playerbuttons/play.png" alt="play" />
-                </a>
-                <a href="#">
-                  <img src="assets/playerbuttons/next.png" alt="next" />
-                </a>
-                <a href="#">
-                  <img src="assets/playerbuttons/repeat.png" alt="repeat" />
-                </a> */}
+                  <a href="#">
+                    <img src={shuffle} alt="shuffle" />
+                  </a>
+                  <a href="#">
+                    <img src={prev} alt="prev" />
+                  </a>
+                  <a href="#">
+                    <img src={play} alt="play" />
+                  </a>
+                  <a href="#">
+                    <img src={next} alt="next" />
+                  </a>
+                  <a href="#">
+                    <img src={repeat} alt="repeat" />
+                  </a>
                 </div>
                 <div className="progress mt-3">
                   <div role="progressbar"></div>
