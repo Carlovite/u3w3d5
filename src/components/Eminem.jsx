@@ -6,7 +6,7 @@ const Eminem = (albumData) => {
       <Card>
         <Card.Img
           variant="top"
-          src={albumData.albumData.album.cover}
+          src={albumData.albumData.album.cover_xl}
           className=""
         />
         <Card.Body>

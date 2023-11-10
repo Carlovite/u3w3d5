@@ -11,7 +11,7 @@ const Home = () => {
         <div className="row">
           <Sidebar></Sidebar>
           <Col className="col-10">
-            <Container>
+            <Container className="my-3 w-50">
               <Row className="g-3">
                 <SpotifyCard></SpotifyCard>
               </Row>
