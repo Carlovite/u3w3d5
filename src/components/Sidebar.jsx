@@ -7,14 +7,14 @@ const Sidebar = () => {
       id="sidebar"
     >
       <div className="container flex-column align-items-start">
-        <a className="navbar-brand" href="">
+        {/* <a className="navbar-brand" href="">
           <img
             src="assets/logo/logo.png"
             alt="Spotify Logo"
             width="131"
             height="40"
           />
-        </a>
+        </a> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -30,20 +30,20 @@ const Sidebar = () => {
           <div className="navbar-nav">
             <ul>
               <li>
-                <a
+                {/* <a
                   className="nav-item nav-link d-flex align-items-center"
-                  href=""
+                //   href=""
                 >
                   <i className="bi bi-house-door-fill"></i>&nbsp; Home
-                </a>
+                </a> */}
               </li>
               <li>
-                <a
+                {/* <a
                   className="nav-item nav-link d-flex align-items-center"
-                  href=""
+                //   href=""
                 >
                   <i className="bi bi-book-fill"></i>&nbsp; Your Library
-                </a>
+                </a> */}
               </li>
               <li>
                 <form className="input-group mt-3" onsubmit="search(event)">
@@ -69,14 +69,14 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div class="nav-btn">
-        <button class="btn signup-btn" type="button">
+      <div className="nav-btn">
+        <button className="btn signup-btn" type="button">
           Sign Up
         </button>
-        <button class="btn login-btn" type="button">
+        <button className="btn login-btn" type="button">
           Login
         </button>
-        <a href="">Cookie Policy</a> |<a href=""> Privacy</a>
+        {/* <a href="">Cookie Policy</a> |<a href=""> Privacy</a> */}
       </div>
     </nav>
   </div>;
